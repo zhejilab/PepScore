@@ -32,8 +32,8 @@ You can download the phyloCSF score files from the following website: https://da
 3. Run "PepScore.R" to calculate PepScore. 
 As shown in the example folder, the input file should contain the following minimum column information for each ORF in a row. 
 len.fdr: the ORF length FDR calculated by "CalculateFDR.ORFlength.pl";
-pfam: 1: with a domain; 0: without a domain;
-tmhmm: 1: with a domain; 0: without a domain;
-phylocsf: the averaged PhyloCSF score across ORF regions, which can be calculated by CalculatePhylocsf.pl. 
-
+pfam: The Pfam prediction result (https://www.ebi.ac.uk/interpro/). 1: with a domain; 0: without a domain;
+tmhmm: The TMHMM prediction result (https://services.healthtech.dtu.dk/service.php?TMHMM-2.0). 1: with a domain; 0: without a domain;
+phylocsf: the averaged PhyloCSF score across ORF regions, which can be calculated by CalculatePhylocsf.pl;
+orf.len: the ORF length. 
 
