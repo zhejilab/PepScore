@@ -14,7 +14,7 @@ usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o ou
 	-g SequenceFile: input the random sequence file in the fasta format
 	-t lengthsOfInterest: Tab delimited text file with two columns. The first column shows the transcript length, and the second shows the ORF length (e.g. 1000	36)
 	-o outputDir: output director
-	-r repeat [optional]: 1000
+	-r repeat [optional]: the number of times generating random transcript sequences, default: 1000
 	-s startCodon [optional]: start codon types, default: ATG
 	-l orfLengthCutoff [optional]: cutoff of minimum candidate ORF length, default: 6
 
