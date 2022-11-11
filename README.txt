@@ -12,13 +12,13 @@ R program installation.
 
 usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o outputDir -s startCodon
 	-g SequenceFile: input the random sequence file in the fasta format
-	-t translen: transcript lengths of interest with column information. The first column represents the transcript length, and the second presents the ORF length
+	-t lengthsOfInterest: Tab delimited text file with two columns. The first column shows the transcript length, and the second shows the ORF length (e.g. 1000	36)
 	-o outputDir: output director
 	-r repeat [optional]: 1000
 	-s startCodon [optional]: start codon types, default: ATG
 	-l orfLengthCutoff [optional]: cutoff of minimum candidate ORF length, default: 6
 
-example command line: perl CalculateFDR.ORFlength.pl -g GRCh38.p13.genome.fa -t transcript.length.txt -o outputDir
+example command line: perl CalculateFDR.ORFlength.pl -g rand.genome.fa -t transcript.length.txt -o outputDir
 
 2. Calculate the phyloCSF score of an ORF. 
 
