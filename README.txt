@@ -4,7 +4,7 @@ Contact: Zhe Ji (zhe.ji@northwestern.edu)
 
 The program is to calculate peptide functional probability based on encoding open reading frame (ORF) features. 
 
-1. Calculate the false discovery rate (FDR) of ORF lengths considerating transcript lengths. 
+1. Calculate the false discovery rates (FDRs) of ORF lengths considerating their transcript lengths. 
 
 usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o outputDir -s startCodon
 	-g SequenceFile: input the random sequence file in the fasta format
