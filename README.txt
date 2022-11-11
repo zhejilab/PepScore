@@ -35,5 +35,5 @@ len.fdr: the ORF length FDR calculated by "CalculateFDR.ORFlength.pl";
 pfam: The Pfam prediction result (https://www.ebi.ac.uk/interpro/). 1: with a domain; 0: without a domain;
 tmhmm: The TMHMM prediction result (https://services.healthtech.dtu.dk/service.php?TMHMM-2.0). 1: with a domain; 0: without a domain;
 phylocsf: the averaged PhyloCSF score across the ORF region, which can be calculated by CalculatePhylocsf.pl;
-orf.len: the ORF length. 
+orf.len: the ORF length (nt). 
 
