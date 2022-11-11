@@ -4,7 +4,11 @@ Contact: Zhe Ji (zhe.ji@northwestern.edu)
 
 The program is to calculate peptide functional probability based on encoding open reading frame (ORF) features. 
 
-1. Calculate the false discovery rates (FDRs) of ORF lengths considerating their transcript lengths. 
+Requirements:
+Perl program installation;
+R program installation.
+
+1. Calculate the false discovery rate (FDR) of ORF lengths considerating transcript lengths. 
 
 usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o outputDir -s startCodon
 	-g SequenceFile: input the random sequence file in the fasta format
@@ -23,6 +27,13 @@ usage: perl CalculatePhylocsf.pl -f orfFile -p phylocsfDir -o outputFile
 	-p the folder link containing phylocsf score files;
 	-o output file.
 
+You can download the phyloCSF score files from the following website: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/
+
 3. Run "PepScore.R" to calculate PepScore. 
+As shown in the example folder, the input file should contain the following minimum column information for each ORF in a row. 
+len.fdr: the ORF length FDR calculated by "CalculateFDR.ORFlength.pl";
+pfam: 1: with a domain; 0: without a domain;
+tmhmm: 1: with a domain; 0: without a domain;
+phylocsf: the averaged PhyloCSF score across ORF regions, which can be calculated by CalculatePhylocsf.pl. 
 
 
