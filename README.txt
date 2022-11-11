@@ -18,14 +18,14 @@ usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o ou
 	-s startCodon [optional]: start codon types, default: ATG
 	-l orfLengthCutoff [optional]: cutoff of minimum candidate ORF length, default: 6
 
-example command line: perl CalculateFDR.ORFlength.pl -g rand.genome.fa -t transcript.length.txt -o outputDir
+Example command line: perl CalculateFDR.ORFlength.pl -g rand.genome.fa -t transcript.length.txt -o outputDir
 
 2. Calculate the phyloCSF score of an ORF. 
 
 usage: perl CalculatePhylocsf.pl -f orfFile -p phylocsfDir -o outputFile
-	-f ORF structure in the genePred format;
-	-p the folder link containing phylocsf score files;
-	-o output file.
+	-f orfFile: ORF structure in the genePred format;
+	-p phylocsfDir: the folder link containing phylocsf score files;
+	-o outputFile: output file.
 
 You can download the phyloCSF score files from the following website: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/
 
