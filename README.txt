@@ -2,7 +2,7 @@ PepScore Calculation
 
 Contact: Zhe Ji (zhe.ji@northwestern.edu)
 
-The program is to calculate peptide functional probability based on encoding open reading frame (ORF) features. 
+The program is to calculate peptide stable probability based on encoding open reading frame (ORF) features. 
 
 Requirements:
 Perl program installation;
