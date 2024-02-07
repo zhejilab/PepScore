@@ -28,6 +28,9 @@ usage: perl CalculatePhylocsf.pl -f orfFile -p phylocsfDir -o outputFile
 	-o outputFile: output file.
 
 You can download the phyloCSF score files from the following website: https://data.broadinstitute.org/compbio1/PhyloCSFtracks/
+The downloaded files are the bw format. And convert the files to the bedGraph format using the "bigWigToBedGraph" tool from the UCSC Genome Browser, which can be downloaded from "https://hgdownload.soe.ucsc.edu/admin/exe/". 
+Be sure the phylocsfDir contains the following files: 
+PhyloCSF+1.bedGraph, PhyloCSF+2.bedGraph, PhyloCSF+3.bedGraph, PhyloCSF-1.bedGraph, PhyloCSF-2.bedGraph, PhyloCSF-3.bedGraph
 
 3. Run "PepScore.R" to calculate PepScore. 
 As shown in the example folder, the input file should contain the following minimum column information for each ORF in a row. 
