@@ -78,6 +78,9 @@ while (<IN>) {
 	chomp;
 	my @s=split /\t/, $_;
 	my $len=$s[0];
+ 	if ($len < 200) {
+  		$len=200;
+	}
 	my $pl=$s[1];
 	my $n1=0;
 	my $n2=0;
