@@ -1,7 +1,7 @@
 if ($#ARGV < 2) {
 	print "usage: perl CalculateFDR.ORFlength.pl -g SequenceFile -t lengthsOfInterest -o outputDir -s startCodon "."\n";
 	print "-g SequenceFile: input the random sequence file in the fasta format;"."\n";
-	print "-t translen: transcript lengths of interest and each row represents one length;"."\n";
+	print "-t translen: tab delimited text file with two columns. The first column shows the transcript length, and the second shows the ORF length (e.g. 1000	36)"."\n";
 	print "-o outputDir: output director;"."\n";
 	print "-r repeat [optional]: 1000"."\n";
 	print "-s startCodon [optional]: start codon types, default: ATG"."\n";
